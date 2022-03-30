@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f6d365 10%, #fda085 100%);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 2px #000000bb;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input {
+  padding: 10px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #ff8800;
+  outline: none;
+  width: 40%;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: medium;
+}
+
+.todo-input::placeholder {
+  color: #afafaf;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 160, 24, 1) 0%,
+    rgba(250, 70, 38, 1) 100%
+  );
+  color: #fff;
+  font-weight: bold;
+}
+.todo-input.edit {
+  border: 2px solid #f09d84;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgb(228, 114, 94) 0%,
+    rgb(240, 147, 8) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(105, 21, 109, 0.815) 0%,
+    rgba(165, 97, 185, 0.815) 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(146, 127, 40, 1) 0%,
+    rgba(185, 149, 100, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(17, 133, 84, 1) 0%,
+    rgba(54, 146, 111, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgb(36, 89, 128) 0%,
+    rgb(99, 139, 190) 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
